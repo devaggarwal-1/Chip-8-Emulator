@@ -12,9 +12,9 @@
 }
 
 .canvas-container {
-    padding: 50px;
+    padding: 30px;
     /* background-color: rgb(154, 211, 152); */
-    border: 7px solid black;
+    border: 5px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -31,5 +31,5 @@ h1 {
     padding: 20px;
     background: rgb(75, 75, 182);
     z-index: 100;
-    border: 4px solid black;
+    border: 3px solid black;
 }

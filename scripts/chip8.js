@@ -3,7 +3,7 @@ import Renderer from "./renderer.js";
 import Speaker from "./speaker.js";
 import CPU from "./cpu.js";
 
-const renderer = new Renderer(23);
+const renderer = new Renderer(12);
 const keyboard = new Keyboard();
 const speaker = new Speaker();
 const cpu = new CPU(renderer, keyboard, speaker)
