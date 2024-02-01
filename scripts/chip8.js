@@ -12,6 +12,31 @@ let loop
 
 let fps = 60, fpsInterval, startTime, now, then, elapsed;
 
+let roms = document.querySelectorAll('li')
+
+roms.forEach(function (e) {
+    e.addEventListener('click', function () {
+        if (e.innerText == "BLITZ") {
+            renderer.clear()
+            then = Date.now()
+            startTime = then
+            cpu.loadRom('BLITZ')
+            loop = requestAnimationFrame(step);
+
+        } else if (e.innerText == "Cave") {
+            renderer.clear()
+
+            then = Date.now()
+            startTime = then
+
+
+
+            cpu.loadRom('Cave.ch8')
+            loop = requestAnimationFrame(step);
+        }
+    })
+})
+
 function init() {
     fpsInterval = 1000 / fps
     then = Date.now()

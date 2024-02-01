@@ -4,15 +4,33 @@
 }
 
 .container {
-    min-height: 100vh;
+    max-height: 100vh;
+    width: 60%;
+    margin: 50px auto;
+}
+
+.rom-container ul {
     display: flex;
-    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    /* border: 2px solid red; */
     align-items: center;
-    overflow-x: hidden;
+    padding-bottom: 5px;
+}
+
+.rom-container ul li {
+    padding: 5px;
+    background: rgb(215, 215, 215);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rom-container {
+    width: 100%;
 }
 
 .canvas-container {
-    padding: 30px;
+    padding: 10px;
     /* background-color: rgb(154, 211, 152); */
     border: 5px solid black;
     display: flex;
@@ -28,7 +46,7 @@ h1 {
 
 .canvas {
     border: 2px solid black;
-    padding: 20px;
+    padding: 10px;
     background: rgb(75, 75, 182);
     z-index: 100;
     border: 3px solid black;
